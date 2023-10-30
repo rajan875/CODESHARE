@@ -11,13 +11,14 @@ public class CodeshareApplication {
 
 	@GetMapping("/app")
 	public String app() {
-		return "welocome to your azure portal";
+		return "welocome to your azure portal!!!";
 	}
 	
 	@GetMapping("/message")
 	public String message() {
 		return "deploying application to azure platform using azure app services and perform ci/cd pipline using github action";
 	}
+	
 	public static void main(String[] args) {
 		SpringApplication.run(CodeshareApplication.class, args);
 	}
