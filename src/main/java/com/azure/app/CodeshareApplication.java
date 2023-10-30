@@ -11,7 +11,7 @@ public class CodeshareApplication {
 
 	@GetMapping("/app")
 	public String app() {
-		return "welocome to your azure application";
+		return "welocome to your azure portal";
 	}
 	
 	@GetMapping("/message")
