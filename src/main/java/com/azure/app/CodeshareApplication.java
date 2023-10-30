@@ -10,8 +10,13 @@ import org.springframework.web.bind.annotation.RestController;
 public class CodeshareApplication {
 
 	@GetMapping("/app")
+	public String app() {
+		return "welocome to your azure application";
+	}
+	
+	@GetMapping("/message")
 	public String message() {
-		return "welocome to your azure app";
+		return "deploying application to azure platform using azure app services and perform ci/cd pipline using github action";
 	}
 	public static void main(String[] args) {
 		SpringApplication.run(CodeshareApplication.class, args);
