@@ -14,9 +14,14 @@ public class CodeshareApplication {
 		return "welocome to your azure portal!!!";
 	}
 	
-	@GetMapping("/message")
+	@GetMapping("/ms1")
 	public String message() {
-		return "deploying application to azure platform using azure app services and perform ci/cd pipline using github action";
+		return "deploying application to azure platform using azure app services.";
+	}
+	
+	@GetMapping("/ms2")
+	public String message() {
+		return "perform ci/cd pipline using github action";
 	}
 	
 	public static void main(String[] args) {
